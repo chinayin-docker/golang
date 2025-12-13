@@ -10,7 +10,7 @@ variable "goreleaser_ver" {
   default = "v2.13.1"
 }
 
-variable "golangci_line_ver" {
+variable "golangci_lint_ver" {
   default = "v2.7.2"
 }
 
@@ -41,7 +41,7 @@ target "_all_platforms" {
   args = {
     GOLANG_VERSION        = version
     GORELEASER_VERSION    = goreleaser_ver
-    GOLANGCI_LINT_VERSION = golangci_line_ver
+    GOLANGCI_LINT_VERSION = golangci_lint_ver
   }
 }
 
