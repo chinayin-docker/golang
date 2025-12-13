@@ -10,7 +10,7 @@ Build simple, secure, scalable systems with Go.
 ### Image Variants
 
 - `chinayin/golang:<version>`
-- `chinayin/golang:<version>-alipine`
+- `chinayin/golang:<version>-alpine`
 
 ### Usage
 
@@ -20,8 +20,8 @@ You can use the image directly, e.g.
 docker run --rm -it chinayin/golang:1.25.5
 docker run --rm -it chinayin/golang:1.25
 
-docker run --rm -it chinayin/golang:1.25.5-alipine
-docker run --rm -it chinayin/golang:1.25-alipine
+docker run --rm -it chinayin/golang:1.25.5-alpine
+docker run --rm -it chinayin/golang:1.25-alpine
 
 docker run --rm -it chinayin/golang:1.25.5-ci
 docker run --rm -it chinayin/golang:1.25-ci
@@ -35,6 +35,6 @@ You can also use the images as a base for your own Dockerfile:
 ```bash
 FROM chinayin/golang:1.25.5
 FROM chinayin/golang:1.25
-FROM chinayin/golang:1.25.5-alipine
-FROM chinayin/golang:1.25-alipine
+FROM chinayin/golang:1.25.5-alpine
+FROM chinayin/golang:1.25-alpine
 ```
