@@ -1,10 +1,10 @@
 #
 #--------------------------------------------------------------------------
-# golang 1.25 trixie
+# golang 1.25 CI
 #--------------------------------------------------------------------------
 #
 
-ARG GOLANG_VERSION
+ARG GOLANG_VERSION=1.25
 FROM golang:${GOLANG_VERSION}-trixie
 
 ARG TARGETOS
