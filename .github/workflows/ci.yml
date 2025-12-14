@@ -30,8 +30,8 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_TOKEN }}
       - name: Copy files
         run: |
-          cp -rf files/* ${{ matrix.provider }}/trixie/
-          cp -rf files/* ${{ matrix.provider }}/ci/
+          cp -rf files/* ${{ matrix.major }}/trixie/
+          cp -rf files/* ${{ matrix.major }}/ci/
           tree .
       - name: Build and push
         uses: docker/bake-action@v6
