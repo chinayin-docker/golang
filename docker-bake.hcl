@@ -24,8 +24,7 @@ group "default" {
 
 function "platforms" {
   params = []
-  result = ["linux/amd64"]
-  #   result = ["linux/amd64", "linux/arm64"]
+  result = ["linux/amd64", "linux/arm64"]
 }
 
 variable "registry" {

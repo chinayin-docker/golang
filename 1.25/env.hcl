@@ -6,6 +6,5 @@ variable "minor" {
 }
 
 group "default" {
-  #targets = ["v125-trixie", "v125-alpine", "v125-ci"]
-  targets = ["v125-trixie"]
+  targets = ["v125-trixie", "v125-alpine", "v125-ci"]
 }
