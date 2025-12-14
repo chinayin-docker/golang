@@ -13,10 +13,12 @@ ARG GORELEASER_VERSION
 ARG GOLANGCI_LINT_VERSION
 
 LABEL maintainer="chinayin <whereismoney@qq.com>" \
+      org.opencontainers.image.title="Golang CI Image" \
+      org.opencontainers.image.source="https://github.com/chinayin-docker/golang" \
       tools.goreleaser="${GORELEASER_VERSION}" \
       tools.golangci_lint="${GOLANGCI_LINT_VERSION}"
 
-#COPY prebuildfs /
+COPY prebuildfs /
 
 RUN set -eux; \
     \
