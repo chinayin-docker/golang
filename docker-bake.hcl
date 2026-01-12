@@ -7,11 +7,11 @@ variable "minor" {
 }
 
 variable "goreleaser_ver" {
-  default = "v2.13.1"
+  default = "v2.13.3"
 }
 
 variable "golangci_lint_ver" {
-  default = "v2.7.2"
+  default = "v2.8.0"
 }
 
 variable "repo" {
