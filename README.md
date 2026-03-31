@@ -17,13 +17,13 @@ Build simple, secure, scalable systems with Go.
 You can use the image directly, e.g.
 
 ```bash
-docker run --rm -it chinayin/golang:1.25.5
+docker run --rm -it chinayin/golang:1.26.1
 docker run --rm -it chinayin/golang:1.25
 
-docker run --rm -it chinayin/golang:1.25.5-alpine
+docker run --rm -it chinayin/golang:1.25.8-alpine
 docker run --rm -it chinayin/golang:1.25-alpine
 
-docker run --rm -it chinayin/golang:1.25.5-ci
+docker run --rm -it chinayin/golang:1.25.8-ci
 docker run --rm -it chinayin/golang:1.25-ci
 ```
 
