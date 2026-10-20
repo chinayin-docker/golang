@@ -13,7 +13,7 @@ Build simple, secure, scalable systems with Go.
 - `chinayin/golang:<version>-alpine`
 - `chinayin/golang:<version>-ci`
 
-> `1.25` is end-of-life and is no longer rebuilt by CI (last published: `1.25.14`).
+> `1.25` is end-of-life: its build directory and CI target were removed. Existing tags (`1.25.14`, `1.25`, …) stay pullable.
 > Supported minors: `1.26`, `1.27`.
 
 ### Usage

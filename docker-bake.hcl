@@ -44,32 +44,6 @@ target "_all_platforms" {
   }
 }
 
-target "v125-trixie" {
-  inherits = ["_all_platforms"]
-  context = "${minor}/trixie"
-  tags = [
-    "${repository}:${version}-trixie",
-    "${repository}:${version}",
-    "${repository}:${minor}",
-  ]
-}
-target "v125-alpine" {
-  inherits = ["_all_platforms"]
-  context = "${minor}/alpine"
-  tags = [
-    "${repository}:${version}-alpine",
-    "${repository}:${minor}-alpine",
-  ]
-}
-target "v125-ci" {
-  inherits = ["_all_platforms"]
-  context = "${minor}/ci"
-  tags = [
-    "${repository}:${version}-ci",
-    "${repository}:${minor}-ci",
-  ]
-}
-
 target "v126-trixie" {
   inherits = ["_all_platforms"]
   context = "${minor}/trixie"
