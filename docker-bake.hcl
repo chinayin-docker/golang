@@ -7,11 +7,11 @@ variable "minor" {
 }
 
 variable "goreleaser_ver" {
-  default = "v2.16.0"
+  default = "v2.18.3"
 }
 
 variable "golangci_lint_ver" {
-  default = "v2.12.2"
+  default = "v2.15.0"
 }
 
 variable "repo" {
@@ -88,6 +88,32 @@ target "v126-alpine" {
   ]
 }
 target "v126-ci" {
+  inherits = ["_all_platforms"]
+  context = "${minor}/ci"
+  tags = [
+    "${repository}:${version}-ci",
+    "${repository}:${minor}-ci",
+  ]
+}
+
+target "v127-trixie" {
+  inherits = ["_all_platforms"]
+  context = "${minor}/trixie"
+  tags = [
+    "${repository}:${version}-trixie",
+    "${repository}:${version}",
+    "${repository}:${minor}",
+  ]
+}
+target "v127-alpine" {
+  inherits = ["_all_platforms"]
+  context = "${minor}/alpine"
+  tags = [
+    "${repository}:${version}-alpine",
+    "${repository}:${minor}-alpine",
+  ]
+}
+target "v127-ci" {
   inherits = ["_all_platforms"]
   context = "${minor}/ci"
   tags = [

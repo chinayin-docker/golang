@@ -1,5 +1,5 @@
 variable "version" {
-  default = "1.26.4"
+  default = "1.26.10"
 }
 variable "minor" {
   default = "1.26"

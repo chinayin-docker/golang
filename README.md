@@ -17,14 +17,14 @@ Build simple, secure, scalable systems with Go.
 You can use the image directly, e.g.
 
 ```bash
-docker run --rm -it chinayin/golang:1.26.1
-docker run --rm -it chinayin/golang:1.25
+docker run --rm -it chinayin/golang:1.27.3
+docker run --rm -it chinayin/golang:1.27
 
-docker run --rm -it chinayin/golang:1.25.8-alpine
-docker run --rm -it chinayin/golang:1.25-alpine
+docker run --rm -it chinayin/golang:1.27.3-alpine
+docker run --rm -it chinayin/golang:1.27-alpine
 
-docker run --rm -it chinayin/golang:1.25.8-ci
-docker run --rm -it chinayin/golang:1.25-ci
+docker run --rm -it chinayin/golang:1.27.3-ci
+docker run --rm -it chinayin/golang:1.27-ci
 ```
 
 The images are built daily and have the security release enabled, so will contain any security updates released more
@@ -33,8 +33,8 @@ than 24 hours ago.
 You can also use the images as a base for your own Dockerfile:
 
 ```bash
-FROM chinayin/golang:1.25.5
-FROM chinayin/golang:1.25
-FROM chinayin/golang:1.25.5-alpine
-FROM chinayin/golang:1.25-alpine
+FROM chinayin/golang:1.27.3
+FROM chinayin/golang:1.27
+FROM chinayin/golang:1.27.3-alpine
+FROM chinayin/golang:1.27-alpine
 ```
